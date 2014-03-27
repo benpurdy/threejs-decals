@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+      body {
+        font-family: Monospace;
+        background-color: #000;
+        color: #000;
+        margin: 0px;
+        overflow: hidden;
+      }
+      #info {
+        color: #000;
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        text-align: center;
+        z-index: 100;
+        display:block;
+      }
+      #info a, .button { color: #f00; font-weight: bold; text-decoration: underline; cursor: pointer }
+
+      #debug{
+        position:absolute;
+        top:0px;
+        left:0px;
+        z-index:10000;
+      }
+
+      #viewport{
+        z-index:1000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="debug" width="300" height="300"></canvas>
+
+    <div id="viewport"></div>
+
+    <script src="js/three.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/decals.js"></script>
+    <script src="js/Decal.js"></script>
+    <script src="js/ObjLoader.js"></script>
+  </body>
+</html>
